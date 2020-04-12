@@ -33,7 +33,7 @@ app.get('/aws',async (req,res)=>{
                     <body bgcolor="${color}">
                     <h1 align="center">Hello from ${ipaddr}</h1>
                     <h2 align="center">My Hostname is: ${hostname}</h2>
-                    <h2 align="center>My Instance type is: ${instanceType}</h2>
+                    <h2 align="center">My Instance type is: ${instanceType}</h2>
                     </body>
                     </html>`;
         console.log("Received request, serving.");

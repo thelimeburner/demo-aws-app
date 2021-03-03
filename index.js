@@ -8,7 +8,8 @@ const color = "#"+((1<<24)*Math.random()|0).toString(16);
 
 app.get('/', (req, res) => {
     const ipaddr = ip.address();
-    let html = "<html><body bgcolor=\""+color+"\"><h1 align=\"center\">Hello from "+ipaddr+"</h1></body></html>";
+    let html = "<html><body bgcolor=\""+color+"\"><h1 align=\"center\">Hello from "+ipaddr+"</h1>
+    <p>This is a sample demo app that demonstrates how a load balancer works.</p></body></html>";
     res.send(html);
 });
 
